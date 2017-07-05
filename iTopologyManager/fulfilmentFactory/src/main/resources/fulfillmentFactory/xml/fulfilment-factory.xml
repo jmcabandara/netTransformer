@@ -25,7 +25,7 @@
     <fulfilment-factory-types>
         <type name="ConfigureInterface" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">ConfigureInterface</param>
-            <param name="commands">fulfillmentFactory/conf/txt/test.txt</param>
+            <param name="commands">fulfillmentFactory/conf/txt/test.templ</param>
         </type>
         <type name="CreateVRF" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">VPN_activator</param>
