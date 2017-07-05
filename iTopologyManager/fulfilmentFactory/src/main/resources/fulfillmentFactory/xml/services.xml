@@ -23,15 +23,15 @@
 <fulfilment-factories xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="../xsd/fulfilment-factory.xsd">
     <fulfilment-factory-types>
-        <type name="add" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="add" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">ADD</param>
             <param name="commands">fulfilment-factory/conf/txt/services/add.txt</param>
         </type>
-        <type name="delete" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="delete" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">DELETE</param>
             <param name="commands">fulfilment-factory/conf/txt/services/delete.txt</param>
         </type>
-        <type name="modify" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="modify" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">MODIFY</param>
             <param name="commands">fulfilment-factory/conf/txt/services/modify.txt</param>
         </type>

@@ -24,66 +24,66 @@
          xsi:noNamespaceSchemaLocation="../xsd/fulfilment-factory.xsd">
     <fulfilment-factory-types>
         <!--cisco fulfillment-->
-        <type name="c_ipv6Forwarding" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="c_ipv6Forwarding" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">ipv6Forwarding</param>
             <param name="commands">fulfillmentFactory/conf/txt/cisco/ipv6Forwarding.templ</param>
         </type>
-        <type name="c_ipv6Interface" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="c_ipv6Interface" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">ipv6Interface</param>
             <param name="commands">fulfillmentFactory/conf/txt/cisco/ipv6Interface.templ</param>
         </type>
-        <type name="c_IPv6Verify" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="c_IPv6Verify" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">IPv6Verify</param>
             <param name="commands">fulfillmentFactory/conf/txt/cisco/IPv6Verify.templ</param>
         </type>
-        <type name="c_IPv6OSPF" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="c_IPv6OSPF" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">IPv6OSPF</param>
             <param name="commands">fulfillmentFactory/conf/txt/cisco/IPv6OSPF.templ</param>
         </type>
        <!--Huawei Fulfillment-->
-        <type name="h_IPv6OSPF_interface" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="h_IPv6OSPF_interface" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">IPv6OSPF_interface</param>
             <param name="commands">fulfillmentFactory/conf/txt/huawei/IPv6OSPF_interface.templ</param>
         </type>
-        <type name="h_ipv6Forwarding" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="h_ipv6Forwarding" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">huawei_ipv6Forwarding</param>
             <param name="commands">fulfillmentFactory/conf/txt/huawei/ipv6Forwarding.templ</param>
         </type>
-        <type name="h_ipv6Interface" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="h_ipv6Interface" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">huawei_ipv6Interface</param>
             <param name="commands">fulfillmentFactory/conf/txt/huawei/ipv6Interface.templ</param>
         </type>
-        <type name="h_IPv6Verify" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="h_IPv6Verify" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">huawei_IPv6Verify</param>
             <param name="commands">fulfillmentFactory/conf/txt/huawei/IPv6Verify.templ</param>
         </type>
-        <type name="h_IPv6OSPF" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="h_IPv6OSPF" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">huawei_IPv6OSPF</param>
             <param name="commands">fulfillmentFactory/conf/txt/huawei/IPv6OSPF.templ</param>
         </type>
-        <type name="h_IPv6OSPF_interface" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="h_IPv6OSPF_interface" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">huawei_IPv6OSPF_interface</param>
             <param name="commands">fulfillmentFactory/conf/txt/huawei/IPv6OSPF_interface.templ</param>
         </type>
         <!--Juniper Fulfillment-->
 
-        <!--type name="j_ipv6Forwarding" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <!--type name="j_ipv6Forwarding" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">huawei_ipv6Forwarding</param>
             <param name="commands">fulfillmentFactory/conf/txt/juniper/ipv6Forwarding.templ</param>
         </type-->
-        <type name="j_ipv6Interface" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="j_ipv6Interface" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">huawei_ipv6Interface</param>
             <param name="commands">fulfillmentFactory/conf/txt/juniper/ipv6Interface.templ</param>
         </type>
-        <type name="j_IPv6Verify" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="j_IPv6Verify" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">huawei_IPv6Verify</param>
             <param name="commands">fulfillmentFactory/conf/txt/juniper/IPv6Verify.templ</param>
         </type>
-        <type name="j_IPv6OSPF_14" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="j_IPv6OSPF_14" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">huawei_IPv6OSPF</param>
             <param name="commands">fulfillmentFactory/conf/txt/juniper/IPv6OSPF_14.templ</param>
         </type>
-        <type name="j_IPv6OSPF_16_" class="com.fulfilmentfactory.impl.TestFulfilmentImpl">
+        <type name="j_IPv6OSPF_16_" class="net.itransformers.topologyviewer.fulfilmentfactory.impl.TestFulfilmentImpl">
             <param name="cmd">huawei_IPv6OSPF</param>
             <param name="commands">fulfillmentFactory/conf/txt/juniper/IPv6OSPF_16.templ</param>
         </type>
