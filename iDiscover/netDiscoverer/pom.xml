@@ -39,7 +39,7 @@
         </dependency>
 
         <dependency>
-            <groupId>net.itransformers</groupId>
+            <groupId>net.itransformers.snmp2xml4j</groupId>
             <artifactId>snmptoolkit</artifactId>
             <version>1.0.10</version>
             <!--Change for new version-->
