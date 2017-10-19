@@ -168,16 +168,16 @@
 
     <repositories>
 
-        <repository>
-            <id>jfrogrepo-libs-release-local</id>
-            <name>jfrogrepo-releases</name>
-            <url>http://repos.itransformers.net:8081/artifactory/libs-release-local</url>
-        </repository>
-        <repository>
-            <id>jfrogrepo-ext-release-local</id>
-            <name>jfrogrepo-releases</name>
-            <url>http://repos.itransformers.net:8081/artifactory/ext-release-local</url>
-        </repository>
+        <!--<repository>-->
+            <!--<id>jfrogrepo-libs-release-local</id>-->
+            <!--<name>jfrogrepo-releases</name>-->
+            <!--<url>http://niau.org/repo/repos</url>-->
+        <!--</repository>-->
+        <!--<repository>-->
+            <!--<id>jfrogrepo-ext-release-local</id>-->
+            <!--<name>jfrogrepo-releases</name>-->
+            <!--<url>http://repos.itransformers.net:8081/artifactory/ext-release-local</url>-->
+        <!--</repository>-->
 
         <!--<repository>-->
             <!--<id>iTransformers Repo</id>-->
@@ -288,19 +288,19 @@
         </profile>
     </profiles>
     <distributionManagement>
-            <repository>
-                <id>jfrogrepo</id>
-                <name>jfrogrepo-releases</name>
-                <url>http://repos.itransformers.net:8081/artifactory/ext-release-local</url>
-            </repository>
-        <snapshotRepository>
-            <id>jfrogrepo</id>
-            <name>jfrogrepo-releases</name>
-            <url>http://repos.itransformers.net:8081/artifactory/ext-snapshot-local</url>
-        </snapshotRepository>
-        <!--<repository>-->
-            <!--<id>ossrh</id>-->
-            <!--<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>-->
-        <!--</repository>-->
+            <!--<repository>-->
+                <!--<id>jfrogrepo</id>-->
+                <!--<name>jfrogrepo-releases</name>-->
+                <!--<url>http://itransformers.net:8081/artifactory/ext-release-local</url>-->
+            <!--</repository>-->
+        <!--<snapshotRepository>-->
+            <!--<id>jfrogrepo</id>-->
+            <!--<name>jfrogrepo-releases</name>-->
+            <!--<url>http://repos.itransformers.net:8081/artifactory/ext-snapshot-local</url>-->
+        <!--</snapshotRepository>-->
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
     </distributionManagement>
 </project>
