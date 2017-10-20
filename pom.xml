@@ -41,7 +41,7 @@
     <!--http://mvnrepository.com/artifact/net.sf.jung-->
     <modules>
         <module>utils</module>
-        <!--<module>bgpPeeringMap</module>-->
+        <module>bgpPeeringMap</module>
         <module>iDiscover</module>
         <module>iTopologyManager</module>
         <!--<module>distribution</module>-->
