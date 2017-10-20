@@ -167,7 +167,10 @@
 
 
     <repositories>
-
+            <repository>
+                <id>freehep</id>
+                <url>http://java.freehep.org/maven2/</url>
+            </repository>
         <!--<repository>-->
             <!--<id>jfrogrepo-libs-release-local</id>-->
             <!--<name>jfrogrepo-releases</name>-->

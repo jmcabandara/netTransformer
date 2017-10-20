@@ -110,10 +110,5 @@
 
         </plugins>
     </build>
-    <repositories>
-        <repository>
-            <id>freehep</id>
-            <url>http://java.freehep.org/maven2/</url>
-        </repository>
-    </repositories>
+
 </project>
