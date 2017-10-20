@@ -52,9 +52,9 @@
             <version>0.8</version><!--Change for new version-->
         </dependency>
         <dependency>
-            <groupId>com.wittams.gritty</groupId>
+            <groupId>com.wittams</groupId>
             <artifactId>gritty</artifactId>
-            <version>0.0.2</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>commons-net</groupId>
@@ -110,4 +110,10 @@
 
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <id>freehep</id>
+            <url>http://java.freehep.org/maven2/</url>
+        </repository>
+    </repositories>
 </project>
