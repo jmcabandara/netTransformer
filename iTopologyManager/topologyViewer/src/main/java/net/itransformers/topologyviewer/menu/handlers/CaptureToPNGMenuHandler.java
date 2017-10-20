@@ -21,12 +21,12 @@
 
 package net.itransformers.topologyviewer.menu.handlers;
 
+import edu.uci.ics.jung.visualization.VisualizationViewer;
 import net.itransformers.topologyviewer.gui.GraphViewerPanel;
 import net.itransformers.topologyviewer.gui.PngFileFilter;
 import net.itransformers.topologyviewer.gui.TopologyManagerFrame;
-import edu.uci.ics.jung.visualization.VisualizationViewer;
-import edu.uci.ics.screencap.Dump;
-import edu.uci.ics.screencap.PNGDump;
+import net.itransformers.utils.screencap.Dump;
+import net.itransformers.utils.screencap.PNGDump;
 
 import javax.swing.*;
 import java.awt.*;
