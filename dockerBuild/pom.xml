@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>netTransformer</artifactId>
         <groupId>net.itransformers</groupId>
-        <version>0.8-SNAPSHOT</version>
+        <version>0.8</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -21,12 +19,12 @@
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>cliDiscoveryLauncher</artifactId>
-            <version>0.8-SNAPSHOT</version>
+            <version>0.8</version>
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>wsitransformer</artifactId>
-            <version>0.8-SNAPSHOT</version>
+            <version>0.8</version>
             <type>war</type>
         </dependency>
     </dependencies>
@@ -217,10 +215,10 @@
                                 <configuration>
                                     <target>
                                         <exec executable="docker">
-                                            <arg value="build"/>
-                                            <arg value="-t"/>
-                                            <arg value="itransformers/nettransformer${project.version}:${git.commit.id.abbrev}"/>
-                                            <arg value="target"/>
+                                            <arg value="build" />
+                                            <arg value="-t" />
+                                            <arg value="itransformers/nettransformer${project.version}:${git.commit.id.abbrev}" />
+                                            <arg value="target" />
                                         </exec>
                                     </target>
                                 </configuration>
@@ -236,9 +234,9 @@
                                 <configuration>
                                     <target>
                                         <exec executable="docker">
-                                            <arg value="tag"/>
-                                            <arg value="itransformers/nettransformer${project.version}:${git.commit.id.abbrev}"/>
-                                            <arg value="itransformers/nettransformer:latest"/>
+                                            <arg value="tag" />
+                                            <arg value="itransformers/nettransformer${project.version}:${git.commit.id.abbrev}" />
+                                            <arg value="itransformers/nettransformer:latest" />
                                         </exec>
                                     </target>
                                 </configuration>
@@ -254,8 +252,8 @@
                                 <configuration>
                                     <target>
                                         <exec executable="docker">
-                                            <arg value="push"/>
-                                            <arg value="itransformers/nettransformer:latest"/>
+                                            <arg value="push" />
+                                            <arg value="itransformers/nettransformer:latest" />
                                         </exec>
                                     </target>
                                 </configuration>
