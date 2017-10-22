@@ -25,13 +25,13 @@
 
     <groupId>net.itransformers</groupId>
     <artifactId>utils</artifactId>
-    <version>0.9</version><!--Change for new version-->
+    <version>0.10-SNAPSHOT</version><!--Change for new version-->
 
 
     <parent>
         <groupId>net.itransformers</groupId>
         <artifactId>netTransformer</artifactId>
-        <version>0.9</version><!--Change for new version-->
+        <version>0.10-SNAPSHOT</version><!--Change for new version-->
     </parent>
 
     <dependencies>
