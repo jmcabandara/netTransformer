@@ -34,7 +34,7 @@
     </properties>
     <groupId>net.itransformers</groupId>
     <artifactId>netTransformer</artifactId>
-    <version>0.8</version><!--Change for new version-->
+    <version>0.8-SNAPSHOT</version><!--Change for new version-->
     <description>netTwork Transformation Manager</description>
     <packaging>pom</packaging>
 
@@ -56,12 +56,14 @@
         <module>wsitransformerClient</module>
         <module>wsitransformerClientCli</module>
     </modules>
+
+
     <scm>
-    <connection>scm:git:ssh://git@github.com/iTransformers/netTransformer.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/iTransformers/netTransformer.git</developerConnection>
-    <url>https://github.com/iTransformers/netTransformer.git</url>
-    <tag>HEAD</tag>
-</scm>
+        <connection>scm:git:ssh://git@github.com/iTransformers/netTransformer.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/iTransformers/netTransformer.git</developerConnection>
+        <url>https://github.com/iTransformers/netTransformer.git</url>
+        <tag>HEAD</tag>
+    </scm>
 
     <build>
         <!--<resources>-->
@@ -291,19 +293,15 @@
         </profile>
     </profiles>
     <distributionManagement>
-            <!--<repository>-->
-                <!--<id>jfrogrepo</id>-->
-                <!--<name>jfrogrepo-releases</name>-->
-                <!--<url>http://itransformers.net:8081/artifactory/ext-release-local</url>-->
-            <!--</repository>-->
-        <!--<snapshotRepository>-->
-            <!--<id>jfrogrepo</id>-->
-            <!--<name>jfrogrepo-releases</name>-->
-            <!--<url>http://repos.itransformers.net:8081/artifactory/ext-snapshot-local</url>-->
-        <!--</snapshotRepository>-->
+
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <id>maven-releases</id>
+            <url>http://193.19.175.202:28081/repository/maven-releases/</url>
         </repository>
+        <snapshotRepository>
+        <id>maven-snapshots</id>
+        <url>http://193.19.175.202:28081/repository/maven-snapshots</url>
+        </snapshotRepository>
+
     </distributionManagement>
 </project>

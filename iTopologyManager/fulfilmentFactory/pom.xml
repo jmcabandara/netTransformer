@@ -26,20 +26,20 @@
     <parent>
         <groupId>net.itransformers</groupId>
         <artifactId>iTopologyManager</artifactId>
-        <version>0.8</version><!--Change for new version-->
+        <version>0.8-SNAPSHOT</version><!--Change for new version-->
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>fulfilmentFactory</artifactId>
-    <version>0.8</version><!--Change for new version-->
+    <version>0.8-SNAPSHOT</version><!--Change for new version-->
 
 
     <dependencies>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>resourceManagerAPI</artifactId>
-            <version>0.8</version><!--Change for new version-->
+            <version>0.8-SNAPSHOT</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
@@ -49,7 +49,7 @@
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>parameterFactoryAPI</artifactId>
-            <version>0.8</version><!--Change for new version-->
+            <version>0.8-SNAPSHOT</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>com.wittams</groupId>
