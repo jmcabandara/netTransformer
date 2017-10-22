@@ -241,7 +241,7 @@
                                     <dependency>
                                         <groupId>net.itransformers</groupId>
                                         <artifactId>netTransformerUI</artifactId>
-                                        <version>1.0</version>
+                                        <version>1.4</version>
                                         <type>war</type>
                                     </dependency>
                                     <contextPath>/</contextPath>
