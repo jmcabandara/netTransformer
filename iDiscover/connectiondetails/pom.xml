@@ -5,11 +5,11 @@
     <parent>
         <groupId>net.itransformers</groupId>
         <artifactId>iDiscover</artifactId>
-        <version>0.10</version>
+        <version>0.11-SNAPSHOT</version>
     </parent>
 
     <artifactId>connectiondetails</artifactId>
-    <version>0.10</version>
+    <version>0.11-SNAPSHOT</version>
 
     <modules>
         <module>connectiondetailsapi</module>
