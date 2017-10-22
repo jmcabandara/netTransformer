@@ -33,7 +33,7 @@
     </properties>
     <groupId>net.itransformers</groupId>
     <artifactId>netTransformer</artifactId>
-    <version>0.10-SNAPSHOT</version><!--Change for new version-->
+    <version>0.10</version><!--Change for new version-->
     <description>netTwork Transformation Manager</description>
     <packaging>pom</packaging>
 
@@ -61,7 +61,7 @@
         <connection>scm:git:ssh://git@github.com/iTransformers/netTransformer.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/iTransformers/netTransformer.git</developerConnection>
         <url>https://github.com/iTransformers/netTransformer.git</url>
-        <tag>HEAD</tag>
+        <tag>netTransformer-0.10</tag>
     </scm>
 
     <build>

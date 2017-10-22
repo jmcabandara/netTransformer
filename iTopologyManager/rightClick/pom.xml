@@ -24,29 +24,29 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>rightClick</artifactId>
-    <version>0.10-SNAPSHOT</version><!--Change for new version-->
+    <version>0.10</version><!--Change for new version-->
 
     <parent>
         <groupId>net.itransformers</groupId>
         <artifactId>iTopologyManager</artifactId>
-        <version>0.10-SNAPSHOT</version><!--Change for new version-->
+        <version>0.10</version><!--Change for new version-->
     </parent>
      <dependencies>
          <dependency>
              <groupId>net.itransformers</groupId>
              <artifactId>rightClickAPI</artifactId>
-             <version>0.10-SNAPSHOT</version><!--Change for new version-->
+             <version>0.10</version><!--Change for new version-->
          </dependency>
          <dependency>
              <groupId>net.itransformers</groupId>
              <artifactId>fulfilmentFactory</artifactId>
-             <version>0.10-SNAPSHOT</version><!--Change for new version-->
+             <version>0.10</version><!--Change for new version-->
          </dependency>
 
          <dependency>
              <groupId>net.itransformers</groupId>
              <artifactId>topologyViewer</artifactId>
-             <version>0.10-SNAPSHOT</version><!--Change for new version-->
+             <version>0.10</version><!--Change for new version-->
          </dependency>
          <dependency>
              <groupId>com.wittams</groupId>
@@ -81,7 +81,7 @@
          <dependency>
              <groupId>net.itransformers</groupId>
              <artifactId>parameterFactoryAPI</artifactId>
-             <version>0.10-SNAPSHOT</version>
+             <version>0.10</version>
          </dependency>
      </dependencies>
     <build>

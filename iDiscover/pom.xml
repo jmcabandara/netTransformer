@@ -26,12 +26,12 @@
     <parent>
         <groupId>net.itransformers</groupId>
         <artifactId>netTransformer</artifactId>
-        <version>0.10-SNAPSHOT</version>
+        <version>0.10</version>
         <!--Change for new version-->
     </parent>
     <artifactId>iDiscover</artifactId>
     <packaging>pom</packaging>
-    <version>0.10-SNAPSHOT</version>
+    <version>0.10</version>
     <modules>
         <module>netDiscoverer</module>
         <module>iDiscoverAPI</module>
