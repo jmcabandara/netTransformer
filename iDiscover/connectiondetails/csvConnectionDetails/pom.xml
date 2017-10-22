@@ -3,20 +3,20 @@
     <parent>
         <artifactId>connectiondetails</artifactId>
         <groupId>net.itransformers</groupId>
-        <version>0.9-SNAPSHOT</version>
+        <version>0.9</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>csvConnectionDetails</artifactId>
 
-    <version>0.9-SNAPSHOT</version>
+    <version>0.9</version>
 
     <dependencies>
 
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>connectiondetailsapi</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>0.9</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>

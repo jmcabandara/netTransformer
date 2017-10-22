@@ -3,7 +3,7 @@
     <parent>
         <artifactId>netTransformer</artifactId>
         <groupId>net.itransformers</groupId>
-        <version>0.9-SNAPSHOT</version>
+        <version>0.9</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -12,43 +12,43 @@
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>netDiscoverer</artifactId>
-            <version>0.9-SNAPSHOT</version><!--Change for new version-->
+            <version>0.9</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>cliDiscoveryLauncher</artifactId>
-            <version>0.9-SNAPSHOT</version><!--Change for new version-->
+            <version>0.9</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>iDiscoverAPI</artifactId>
-            <version>0.9-SNAPSHOT</version><!--Change for new version-->
+            <version>0.9</version><!--Change for new version-->
         </dependency>
 
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>xmlResourceManager</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>0.9</version>
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>connectiondetailsapi</artifactId>
-            <version>0.9-SNAPSHOT</version><!--Change for new version-->
+            <version>0.9</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>csvConnectionDetails</artifactId>
-            <version>0.9-SNAPSHOT</version><!--Change for new version-->
+            <version>0.9</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>xmlNodeDataProvider</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>0.9</version>
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>xmlTopologyViewerConfig</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>0.9</version>
         </dependency>
 
 

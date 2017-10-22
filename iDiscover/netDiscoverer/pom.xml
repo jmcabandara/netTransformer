@@ -3,7 +3,7 @@
     <parent>
         <artifactId>iDiscover</artifactId>
         <groupId>net.itransformers</groupId>
-        <version>0.9-SNAPSHOT</version>
+        <version>0.9</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -14,25 +14,25 @@
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>resourceManagerAPI</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>0.9</version>
             <!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>connectiondetailsapi</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>0.9</version>
             <!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>iDiscoverAPI</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>0.9</version>
             <!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>csvConnectionDetails</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>0.9</version>
             <!--Change for new version-->
         </dependency>
 
@@ -51,13 +51,13 @@
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>utils</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>0.9</version>
             <!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>postDiscoverer</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>0.9</version>
             <!--Change for new version-->
         </dependency>
         <dependency>
