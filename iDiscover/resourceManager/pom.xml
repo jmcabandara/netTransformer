@@ -26,12 +26,12 @@
     <parent>
         <groupId>net.itransformers</groupId>
         <artifactId>iDiscover</artifactId>
-        <version>0.8</version><!--Change for new version-->
+        <version>0.9-SNAPSHOT</version><!--Change for new version-->
     </parent>
 
     <artifactId>resourceManager</artifactId>
     <packaging>pom</packaging>
-    <version>0.8</version>
+    <version>0.9-SNAPSHOT</version>
 
     <modules>
         <module>xmlResourceManager</module>
@@ -44,7 +44,7 @@
     <dependency>
         <groupId>net.itransformers</groupId>
         <artifactId>utils</artifactId>
-        <version>0.8</version>
+        <version>0.9-SNAPSHOT</version>
         <!--Change for new version-->
     </dependency>
     </dependencies>
