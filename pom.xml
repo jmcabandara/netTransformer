@@ -29,6 +29,7 @@
         <docker.registry>docker.io:5000/</docker.registry>
         <project.build.outputDirectory>target</project.build.outputDirectory>
         <projectPath>..</projectPath>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
     </properties>
     <groupId>net.itransformers</groupId>
     <artifactId>netTransformer</artifactId>
