@@ -21,7 +21,6 @@
 
 package net.itransformers.topologyviewer.menu;
 
-import edu.uci.ics.jung.algorithms.layout.DAGLayout;
 import net.itransformers.topologyviewer.gui.TopologyManagerFrame;
 import net.itransformers.topologyviewer.menu.handlers.*;
 import net.itransformers.topologyviewer.menu.handlers.graphFileMenuHandlers.*;
@@ -298,9 +297,9 @@ public class MenuBuilder {
         JMenuItem captureTpPNGMenuItem = new JMenuItem("Export to PNG");
         captureTpPNGMenuItem.addActionListener(new CaptureToPNGMenuHandler(frame));
         capture.add(captureTpPNGMenuItem);
-        JMenuItem captureTpEPSMenuItem = new JMenuItem("Export to EPS");
-        captureTpEPSMenuItem.addActionListener(new CaptureToEPSMenuHandler(frame));
-        capture.add(captureTpEPSMenuItem);
+//        JMenuItem captureTpEPSMenuItem = new JMenuItem("Export to EPS");
+//        captureTpEPSMenuItem.addActionListener(new CaptureToEPSMenuHandler(frame));
+//        capture.add(captureTpEPSMenuItem);
         file.add(capture);
 
         final JMenuItem saveGraph = new JMenuItem("Export Current Graph to Graphml");

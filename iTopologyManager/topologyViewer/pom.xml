@@ -20,58 +20,56 @@
   ~ Copyright (c) 2010-2016 iTransformers Labs. All rights reserved.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>net.itransformers</groupId>
         <artifactId>iTopologyManager</artifactId>
-        <version>0.8</version><!--Change for new version-->
+        <version>0.11-SNAPSHOT</version><!--Change for new version-->
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>topologyViewer</artifactId>
-    <version>0.8</version><!--Change for new version-->
+    <version>0.11-SNAPSHOT</version><!--Change for new version-->
     <dependencies>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>topologyViewerConfigAPI</artifactId>
-            <version>0.8</version><!--Change for new version-->
+            <version>0.11-SNAPSHOT</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>iDiscoverAPI</artifactId>
-            <version>0.8</version><!--Change for new version-->
+            <version>0.11-SNAPSHOT</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>fileBasedProjectManager</artifactId>
-            <version>0.8</version><!--Change for new version-->
+            <version>0.11-SNAPSHOT</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>bgpPeeringMap</artifactId>
-            <version>0.8</version><!--Change for new version-->
+            <version>0.11-SNAPSHOT</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>rightClickAPI</artifactId>
-            <version>0.8</version><!--Change for new version-->
+            <version>0.11-SNAPSHOT</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>utils</artifactId>
-            <version>0.8</version><!--Change for new version-->
+            <version>0.11-SNAPSHOT</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>images</artifactId>
-            <version>0.8</version><!--Change for new version-->
+            <version>0.11-SNAPSHOT</version><!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>resourceManagerAPI</artifactId>
-            <version>0.8</version><!--Change for new version-->
+            <version>0.11-SNAPSHOT</version><!--Change for new version-->
         </dependency>
 
         <dependency>
@@ -104,11 +102,7 @@
 			<artifactId>jung-algorithms</artifactId>
 			<version>2.0.1</version>
 		</dependency>							
-        <dependency>
-            <groupId>edu.uci.ics</groupId>
-            <artifactId>screencap</artifactId>
-            <version>1.0</version>
-        </dependency>
+
         <dependency>
             <groupId>net.sourceforge.saxon</groupId>
             <artifactId>saxon</artifactId>
@@ -128,22 +122,22 @@
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>connectiondetailsapi</artifactId>
-            <version>0.8</version>
+            <version>0.11-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>topologyViewerConfigAPI</artifactId>
-            <version>0.8</version>
+            <version>0.11-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>csvConnectionDetails</artifactId>
-            <version>0.8</version>
+            <version>0.11-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>netDiscoverer</artifactId>
-            <version>0.8</version>
+            <version>0.11-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

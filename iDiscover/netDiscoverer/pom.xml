@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>iDiscover</artifactId>
         <groupId>net.itransformers</groupId>
-        <version>0.8</version>
+        <version>0.11-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -16,32 +14,32 @@
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>resourceManagerAPI</artifactId>
-            <version>0.8</version>
+            <version>0.11-SNAPSHOT</version>
             <!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>connectiondetailsapi</artifactId>
-            <version>0.8</version>
+            <version>0.11-SNAPSHOT</version>
             <!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>iDiscoverAPI</artifactId>
-            <version>0.8</version>
+            <version>0.11-SNAPSHOT</version>
             <!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>csvConnectionDetails</artifactId>
-            <version>0.8</version>
+            <version>0.11-SNAPSHOT</version>
             <!--Change for new version-->
         </dependency>
 
         <dependency>
-            <groupId>net.itransformers</groupId>
+            <groupId>net.itransformers.snmp2xml4j</groupId>
             <artifactId>snmptoolkit</artifactId>
-            <version>1.0.5</version>
+            <version>1.0.10</version>
             <!--Change for new version-->
         </dependency>
         <dependency>
@@ -53,13 +51,13 @@
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>utils</artifactId>
-            <version>0.8</version>
+            <version>0.11-SNAPSHOT</version>
             <!--Change for new version-->
         </dependency>
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>postDiscoverer</artifactId>
-            <version>0.8</version>
+            <version>0.11-SNAPSHOT</version>
             <!--Change for new version-->
         </dependency>
         <dependency>
@@ -88,11 +86,11 @@
             <version>2.1.6</version>
         </dependency>
 
-        <dependency>
-            <groupId>netTransformer</groupId>
-            <artifactId>java-mrt</artifactId>
-            <version>1.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>netTransformer</groupId>-->
+            <!--<artifactId>java-mrt</artifactId>-->
+            <!--<version>1.0</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>commons-validator</groupId>
