@@ -168,7 +168,7 @@
         <dependency>
             <groupId>net.itransformers</groupId>
             <artifactId>netTransformerUI</artifactId>
-            <version>1.3</version>
+            <version>1.4</version>
             <type>war</type>
             <scope>runtime</scope>
         </dependency>
