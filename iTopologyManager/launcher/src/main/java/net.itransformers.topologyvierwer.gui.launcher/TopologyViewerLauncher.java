@@ -68,6 +68,7 @@ public class TopologyViewerLauncher {
 
         TopologyManagerFrame frame = (TopologyManagerFrame) ctx.getBean("topologyManagerFrame");
         //frame.setPath();
+
         frame.init(new File(baseDir));
 
     }
