@@ -31,7 +31,7 @@ public class ProjectConstants {
     public static final String freeGraphDiscovererName = "Free Graph";
 
     public static final String snmpProjectType = "ipNetworkDiscovery";
-    public static final String bgpDiscovererProjectType = "bgpMapDiscovery";
+    public static final String bgpDiscovererProjectType = "bgpPeeringMap";
     public static final String freeGraphProjectType = "freeGraph";
 
 
