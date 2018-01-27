@@ -50,13 +50,15 @@ public class CLIGraphFilter {
         String outputGraphml = cmd.getOptionValue("og");
         File outputGraphmlFile = new File(outputGraphml);
 
+        String filterClass = cmd.getOptionValue("f");
 
-        filter(inputGraphmlFile, outputGraphmlFile);
+
+        filter(inputGraphmlFile, outputGraphmlFile, filterClass);
 
 
     }
 
-    static void filter(File inputGraphmlFile,File outputGraphmlFile){
+    static void filter(File inputGraphmlFile,File outputGraphmlFile, String filterClass){
 
       GraphLoader graphLoader = new GraphLoader(inputGraphmlFile);
       graphmlLoader = graphLoader.getGraphmlLoader();
@@ -71,7 +73,7 @@ public class CLIGraphFilter {
       IncludeType nodeIncludeType = new IncludeType();
       nodeIncludeType.setFor(ForType.NODE);
 
-      nodeIncludeType.setClassType("net.itransformers.customgraphfilters.BGIPv4IntPeeringIncluder");
+      nodeIncludeType.setClassType(filterClass);
       filterType.getInclude().add(nodeIncludeType);
       GraphWritter graphWritter = new GraphWritter();
       graphWritter.write(graphTransformer.transformCurrentGraph(graphLoader.getEntireGraph(),filterType,null),graphmlLoader,outputGraphmlFile);
