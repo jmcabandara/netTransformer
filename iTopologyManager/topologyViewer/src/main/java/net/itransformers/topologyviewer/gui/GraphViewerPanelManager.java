@@ -23,6 +23,8 @@ package net.itransformers.topologyviewer.gui;
 
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.io.GraphMLMetadata;
+import net.itransformers.graphmlloader.FileSystemGraphmlLoader;
+import net.itransformers.graphmlloader.GraphmlLoader;
 import net.itransformers.topologyviewer.config.TopologyViewerConfigManager;
 import net.itransformers.topologyviewer.config.models.TopologyViewerConfType;
 import org.apache.commons.collections15.Factory;

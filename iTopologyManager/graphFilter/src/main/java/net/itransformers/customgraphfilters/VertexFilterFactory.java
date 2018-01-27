@@ -19,7 +19,7 @@
  * Copyright (c) 2010-2016 iTransformers Labs. All rights reserved.
  */
 
-package net.itransformers.topologyviewer.gui;
+package net.itransformers.customgraphfilters;
 
 import edu.uci.ics.jung.algorithms.filters.VertexPredicateFilter;
 import edu.uci.ics.jung.graph.Graph;
@@ -44,7 +44,7 @@ public class VertexFilterFactory {
     static Logger logger = Logger.getLogger(VertexFilterFactory.class);
    // private Map<String, DataMatcher> matcherMap = new HashMap<String, DataMatcher>();
 
-    static VertexPredicateFilter<String, String> createVertexFilter(final FilterType filter,final Map<String, DataMatcher> matcherMap ,final Map<String, GraphMLMetadata<String>> vertexMetadata, final Graph<String, String> graph1) {
+    public static VertexPredicateFilter<String, String> createVertexFilter(final FilterType filter, final Map<String, DataMatcher> matcherMap, final Map<String, GraphMLMetadata<String>> vertexMetadata, final Graph<String, String> graph1) {
         return new VertexPredicateFilter<String, String>(new Predicate<String>() {
                 public boolean evaluate(String v) {
                     if (graph1.getIncidentEdges(v).isEmpty()){

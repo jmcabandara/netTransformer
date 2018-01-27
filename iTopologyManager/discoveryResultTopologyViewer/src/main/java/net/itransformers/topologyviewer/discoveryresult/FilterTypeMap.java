@@ -1,10 +1,8 @@
 package net.itransformers.topologyviewer.discoveryresult;
 
-import net.itransformers.topologyviewer.config.models.DataMatcherType;
 import net.itransformers.topologyviewer.config.models.FilterType;
 import net.itransformers.topologyviewer.config.models.FiltersType;
 import net.itransformers.topologyviewer.config.models.TopologyViewerConfType;
-import net.itransformers.topologyviewer.config.models.datamatcher.DataMatcher;
 import org.apache.log4j.Logger;
 
 import java.util.HashMap;

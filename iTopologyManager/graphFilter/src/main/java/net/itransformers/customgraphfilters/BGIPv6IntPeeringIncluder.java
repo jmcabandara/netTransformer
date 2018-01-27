@@ -1,5 +1,5 @@
 /*
- * BGIPv4IntPeeringIncluder.java
+ * BGIPv6IntPeeringIncluder.java
  *
  * This work is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published
@@ -19,12 +19,11 @@
  * Copyright (c) 2010-2016 iTransformers Labs. All rights reserved.
  */
 
-package net.itransformers.topologyviewer.customfilterincluders;
+package net.itransformers.customgraphfilters;
 
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.util.Pair;
 import edu.uci.ics.jung.io.GraphMLMetadata;
-import net.itransformers.topologyviewer.gui.VertexIncluder;
 
 import java.util.Collection;
 import java.util.Map;
@@ -32,15 +31,14 @@ import java.util.Map;
 /**
  * Created by vasko on 10/13/14.
  */
-public class BGIPv4IntPeeringIncluder implements VertexIncluder {
+public class BGIPv6IntPeeringIncluder implements VertexIncluder {
     @Override
     public boolean hasToInclude(String vertexName, Map<String, GraphMLMetadata<String>> vertexMetadata, Graph<String, String> graph1) {
         String country = vertexMetadata.get("Country").transformer.transform(vertexName);
-        String ipv4Flag = vertexMetadata.get("IPv4Flag").transformer.transform(vertexName);
-            if("BG".equals(country)&"TRUE".equals(ipv4Flag)){
+        String ipv6Flag = vertexMetadata.get("IPv6Flag").transformer.transform(vertexName);
+            if("BG".equals(country)&"TRUE".equals(ipv6Flag)){
                 return true;
             }
-
             if (!"BG".equals(country)) {
             Collection<String> inEdges = graph1.getInEdges(vertexName);
             for (String inEdge : inEdges) {
@@ -52,10 +50,9 @@ public class BGIPv4IntPeeringIncluder implements VertexIncluder {
                     oppositeVertex = endpoints.getFirst();
                 }
                 String oppositeCountry = vertexMetadata.get("Country").transformer.transform(oppositeVertex);
-                String oppositeIPv6Flag = vertexMetadata.get("IPv4Flag").transformer.transform(oppositeVertex);
+                String oppositeIPv6Flag = vertexMetadata.get("IPv6Flag").transformer.transform(oppositeVertex);
 
                 if ("BG".equals(oppositeCountry)&&"TRUE".equals(oppositeIPv6Flag)) {
-//                   System.out.println("BGAndIntBGPeeringIncluder returns "+vertexName);
                     return true;
                 }
            }

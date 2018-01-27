@@ -25,7 +25,6 @@ import net.itransformers.topologyviewer.config.models.EdgeColorType;
 import net.itransformers.topologyviewer.config.models.TopologyViewerConfType;
 import org.apache.log4j.Logger;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

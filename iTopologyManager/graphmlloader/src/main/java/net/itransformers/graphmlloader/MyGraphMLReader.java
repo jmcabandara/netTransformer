@@ -18,7 +18,7 @@
  *
  * Copyright (c) 2010-2016 iTransformers Labs. All rights reserved.
  */
-package net.itransformers.topologyviewer.gui;
+package net.itransformers.graphmlloader;
 
 import edu.uci.ics.jung.algorithms.util.MapSettableTransformer;
 import edu.uci.ics.jung.algorithms.util.SettableTransformer;

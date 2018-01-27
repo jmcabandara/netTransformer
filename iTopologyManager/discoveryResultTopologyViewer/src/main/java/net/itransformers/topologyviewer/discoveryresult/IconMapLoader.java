@@ -20,7 +20,6 @@ package net.itransformers.topologyviewer.discoveryresult;/*
  */
 
 import net.itransformers.idiscover.api.models.graphml.GraphmlNode;
-import net.itransformers.topologyviewer.config.models.DataMatcherType;
 import net.itransformers.topologyviewer.config.models.IconType;
 import net.itransformers.topologyviewer.config.models.TopologyViewerConfType;
 import net.itransformers.topologyviewer.config.models.datamatcher.DataMatcher;

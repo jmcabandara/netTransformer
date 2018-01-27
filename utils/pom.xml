@@ -25,7 +25,6 @@
 
     <groupId>net.itransformers</groupId>
     <artifactId>utils</artifactId>
-    <version>0.11-SNAPSHOT</version><!--Change for new version-->
 
 
     <parent>
@@ -54,6 +53,11 @@
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity</artifactId>
             <version>1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>

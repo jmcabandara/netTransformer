@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package net.itransformers.topologyviewer.gui;
+package net.itransformers.customgraphfilters;
 
 import net.itransformers.topologyviewer.config.models.FilterType;
 import net.itransformers.topologyviewer.config.models.ForType;

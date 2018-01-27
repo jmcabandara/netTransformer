@@ -24,6 +24,7 @@ package net.itransformers.topologyviewer.gui;
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.io.GraphMLMetadata;
 import edu.uci.ics.jung.visualization.LayeredIcon;
+import net.itransformers.graphmlloader.GraphmlLoaderListener;
 import net.itransformers.topologyviewer.config.models.DataMatcherType;
 import net.itransformers.topologyviewer.config.models.IconType;
 import net.itransformers.topologyviewer.config.models.TopologyViewerConfType;
@@ -38,7 +39,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class IconMapLoader implements GraphmlLoaderListener{
+public class IconMapLoader implements GraphmlLoaderListener {
     static Logger logger = Logger.getLogger(IconMapLoader.class);
 
     private Map<String, Icon> iconMap = new HashMap<String, Icon>();

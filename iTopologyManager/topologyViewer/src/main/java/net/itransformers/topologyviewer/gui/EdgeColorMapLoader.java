@@ -21,10 +21,11 @@
 
 package net.itransformers.topologyviewer.gui;
 
-import net.itransformers.topologyviewer.config.models.EdgeColorType;
-import net.itransformers.topologyviewer.config.models.TopologyViewerConfType;
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.io.GraphMLMetadata;
+import net.itransformers.graphmlloader.GraphmlLoaderListener;
+import net.itransformers.topologyviewer.config.models.EdgeColorType;
+import net.itransformers.topologyviewer.config.models.TopologyViewerConfType;
 import org.apache.log4j.Logger;
 
 import java.awt.*;
@@ -39,7 +40,7 @@ import java.util.Map;
  * Time: 11:27
  * To change this template use File | Settings | File Templates.
  */
-public class EdgeColorMapLoader implements GraphmlLoaderListener{
+public class EdgeColorMapLoader implements GraphmlLoaderListener {
     static Logger logger = Logger.getLogger(EdgeColorMapLoader.class);
 
     private Map<String,Color> edgesColorMap = new HashMap<String, Color>();

@@ -1,5 +1,5 @@
-/*
- * FileSystemGraphmlLoader.java
+package net.itransformers.graphmlloader;/*
+ * net.itransformers.graphmlloader.FileSystemGraphmlLoader.java
  *
  * This work is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published
@@ -18,8 +18,6 @@
  *
  * Copyright (c) 2010-2016 iTransformers Labs. All rights reserved.
  */
-
-package net.itransformers.topologyviewer.gui;
 
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.util.Pair;
@@ -54,6 +52,10 @@ public class FileSystemGraphmlLoader<G extends Graph<String,String>> implements 
         this.factory = factory;
         this.urlPath = urlPath;
     }
+
+
+
+
     @Override
     public void loadGraphml() throws Exception {
         final G graph = factory.create();
@@ -110,6 +112,8 @@ public class FileSystemGraphmlLoader<G extends Graph<String,String>> implements 
     public Map<String, GraphMLMetadata<String>> getEdgeMetadatas() {
         return edgeMetadatas;
     }
+
+
     @Override
     public void addGraphmlLoaderListener(GraphmlLoaderListener listener){
         this.listeners.add(listener);

@@ -47,8 +47,6 @@ public class AddGraphMenuHandler implements ActionListener {
 
 
 
-
-
     @Override
     public void actionPerformed(ActionEvent e) {
         File projectPath = frame.getPath();

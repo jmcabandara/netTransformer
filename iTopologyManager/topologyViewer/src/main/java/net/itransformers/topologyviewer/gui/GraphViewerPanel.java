@@ -38,6 +38,9 @@ import edu.uci.ics.jung.visualization.picking.MultiPickedState;
 import edu.uci.ics.jung.visualization.picking.PickedState;
 import edu.uci.ics.jung.visualization.renderers.DefaultEdgeLabelRenderer;
 import edu.uci.ics.jung.visualization.renderers.DefaultVertexLabelRenderer;
+import net.itransformers.customgraphfilters.EdgeFilterFactory;
+import net.itransformers.customgraphfilters.VertexFilterFactory;
+import net.itransformers.graphmlloader.GraphmlLoader;
 import net.itransformers.topologyviewer.config.models.*;
 import net.itransformers.topologyviewer.config.models.datamatcher.DataMatcher;
 import net.itransformers.topologyviewer.rightclick.RightClickInvoker;
@@ -578,11 +581,11 @@ public class GraphViewerPanel<G extends Graph<String, String>> extends JPanel {
                 logger.error("Can not access constructor class: " + className, e);
             }
         }
-        EdgePredicateFilter<String, String> edgeFilter = EdgeFilterFactory.createEdgeFilter(filter, matcherMap,edgeMetadatas1);
+        EdgePredicateFilter<String, String> edgeFilter = EdgeFilterFactory.createEdgeFilter(filter, matcherMap, edgeMetadatas1);
         final Graph<String, String> graph1 = edgeFilter.transform(entireGraph);
 
 
-        VertexPredicateFilter<String, String> filterV = VertexFilterFactory.createVertexFilter(filter,matcherMap, graphmlLoader.getVertexMetadatas(), graph1);
+        VertexPredicateFilter<String, String> filterV = VertexFilterFactory.createVertexFilter(filter, matcherMap, graphmlLoader.getVertexMetadatas(), graph1);
 
         G graph2 = (G) filterV.transform(graph1);
         HashSet<String> set = new HashSet<String>(graph2.getVertices());
