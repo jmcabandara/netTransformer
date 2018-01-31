@@ -46,7 +46,7 @@ public class FileBasedProjectManagerTest {
 
         Assert.assertTrue(testGetProjectNames());
 
-       // Assert.assertTrue(testDeleteProject());
+        Assert.assertTrue(testDeleteProject());
 
     }
 

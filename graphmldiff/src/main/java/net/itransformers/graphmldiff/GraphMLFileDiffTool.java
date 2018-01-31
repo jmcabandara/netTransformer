@@ -19,7 +19,7 @@
  * Copyright (c) 2010-2016 iTransformers Labs. All rights reserved.
  */
 
-package net.itransformers.topologyviewer.diff;
+package net.itransformers.graphmldiff;
 
 import javax.swing.*;
 import java.io.File;

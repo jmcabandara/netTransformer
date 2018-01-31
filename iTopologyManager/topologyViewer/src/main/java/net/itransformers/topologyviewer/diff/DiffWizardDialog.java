@@ -21,6 +21,7 @@
 
 package net.itransformers.topologyviewer.diff;
 
+import net.itransformers.graphmldiff.GraphMLFileDiffTool;
 import net.itransformers.topologyviewer.gui.PreferencesKeys;
 import net.itransformers.topologyviewer.gui.TopologyManagerFrame;
 import net.itransformers.utils.ProjectConstants;

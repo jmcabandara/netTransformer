@@ -8,7 +8,6 @@ import net.itransformers.graphmlloader.GraphmlLoader;
 import net.itransformers.topologyviewer.config.models.FilterType;
 import net.itransformers.topologyviewer.config.models.datamatcher.DataMatcher;
 
-import java.util.HashSet;
 import java.util.Map;
 
 /**
@@ -30,7 +29,7 @@ public class GraphTransformer<G extends Graph<String, String>> {
         VertexPredicateFilter<String, String> filterV = VertexFilterFactory.createVertexFilter(filter, matcherMap, graphmlLoader.getVertexMetadatas(), graph1);
 
         G graph2 = (G) filterV.transform(graph1);
-        HashSet<String> set = new HashSet<String>(graph2.getVertices());
+      //  HashSet<String> set = new HashSet<String>(graph2.getVertices());
 
         return (G) graph2;
     }
