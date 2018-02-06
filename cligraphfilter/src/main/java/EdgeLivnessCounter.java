@@ -19,7 +19,13 @@ public class EdgeLivnessCounter {
     private static Map<String, AtomicInteger> edgesCount = new HashMap<>();
 
     public static void main(String[] args) throws MalformedURLException {
-        File f = new File("C:\\Users\\vasko\\IdeaProjects\\netTransformer2");
+        System.out.println("Start processing..");
+
+        if (args.length !=1) {
+            System.out.println("Missing input dir");
+            System.exit(1);
+        }
+        File f = new File(args[0]);
         String[] files = f.list(new FilenameFilter() {
             @Override
             public boolean accept(File dir, String name) {
@@ -28,10 +34,10 @@ public class EdgeLivnessCounter {
         });
         Arrays.sort(files);
         for (String file : files) {
-            File inputGraphmlFile = new File(file);
+            System.out.println("Processing file: "+file);
+            File inputGraphmlFile = new File(f,file);
             count(inputGraphmlFile);
             printHistogram();
-            System.out.println("--------");
         }
     }
 
@@ -49,6 +55,7 @@ public class EdgeLivnessCounter {
                 edgesExistance.put(edge,new AtomicBoolean(true));
                 edgesCount.put(edge, new AtomicInteger(0));
             } else if (!exists.get()){ // existing edge
+                System.out.println("Existing edge appeared again: "+edge);
                 exists.set(true);
                 AtomicInteger count = edgesCount.get(edge);
                 count.set(count.get()+1);
@@ -56,11 +63,12 @@ public class EdgeLivnessCounter {
         }
 
         // removed edges
-        Set<String> keys = edgesExistance.keySet();
+        Set<String> keys = new HashSet<>(edgesExistance.keySet());
         keys.removeAll(edges);
         for (String edge : keys) {
             AtomicBoolean exists = edgesExistance.get(edge);
             if (exists.get()){
+                System.out.println("Existing edge disappeared again: "+edge);
                 exists.set(false);
                 AtomicInteger count = edgesCount.get(edge);
                 count.set(count.get()+1);
