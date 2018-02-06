@@ -1,3 +1,4 @@
+import edu.uci.ics.jung.graph.Graph;
 import net.itransformers.graphmlloader.GraphmlLoader;
 import net.itransformers.topologyviewer.config.models.FilterType;
 import net.itransformers.topologyviewer.config.models.ForType;
@@ -7,6 +8,7 @@ import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.net.MalformedURLException;
+import java.util.Map;
 
 /**
  * Created by niau on 1/25/18.
@@ -52,32 +54,36 @@ public class CLIGraphFilter {
 
         String filterClass = cmd.getOptionValue("f");
 
-
         filter(inputGraphmlFile, outputGraphmlFile, filterClass);
-
-
     }
 
-    static void filter(File inputGraphmlFile,File outputGraphmlFile, String filterClass){
+    static void filter(File inputGraphmlFile, File outputGraphmlFile, String filterClass) {
 
-      GraphLoader graphLoader = new GraphLoader(inputGraphmlFile);
-      graphmlLoader = graphLoader.getGraphmlLoader();
-      GraphTransformer graphTransformer = new GraphTransformer(graphmlLoader);
+        GraphLoader graphLoader = new GraphLoader(inputGraphmlFile);
+        graphmlLoader = graphLoader.getGraphmlLoader();
+        GraphTransformer graphTransformer = new GraphTransformer(graphmlLoader);
 
-      FilterType filterType = new FilterType();
-      filterType.setName("BG peering filter");
-      filterType.setType("or");
-      IncludeType edgeIncludeType = new IncludeType();
-      edgeIncludeType.setFor(ForType.EDGE);
-      filterType.getInclude().add(edgeIncludeType);
-      IncludeType nodeIncludeType = new IncludeType();
-      nodeIncludeType.setFor(ForType.NODE);
+        FilterType filterType = new FilterType();
+        filterType.setName("BG peering filter");
+        filterType.setType("or");
+        IncludeType edgeIncludeType = new IncludeType();
+        edgeIncludeType.setFor(ForType.EDGE);
+        filterType.getInclude().add(edgeIncludeType);
+        IncludeType nodeIncludeType = new IncludeType();
+        nodeIncludeType.setFor(ForType.NODE);
 
-      nodeIncludeType.setClassType(filterClass);
-      filterType.getInclude().add(nodeIncludeType);
-      GraphWritter graphWritter = new GraphWritter();
-      graphWritter.write(graphTransformer.transformCurrentGraph(graphLoader.getEntireGraph(),filterType,null),graphmlLoader,outputGraphmlFile);
+        nodeIncludeType.setClassType(filterClass);
+        filterType.getInclude().add(nodeIncludeType);
 
+        GraphWritter graphWritter = new GraphWritter();
+        Map graphMetadatas = graphmlLoader.getGraphMetadatas();
+        Map vertexMetadatas = graphmlLoader.getVertexMetadatas();
+        Map edgeMetadatas = graphmlLoader.getEdgeMetadatas();
+        Graph entireGraph = graphLoader.getEntireGraph();
+
+        Graph currentGraph = graphTransformer.transformCurrentGraph(entireGraph, filterType, null);
+
+        graphWritter.write(currentGraph, graphMetadatas, vertexMetadatas, edgeMetadatas, outputGraphmlFile);
 
     }
 

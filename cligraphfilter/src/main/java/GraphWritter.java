@@ -9,13 +9,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
 import java.util.Arrays;
+import java.util.Map;
 
 /**
  * Created by niau on 1/26/18.
  */
 public class GraphWritter {
 
-  void  write(Graph<String, String> currentGraph,GraphmlLoader graphmlLoader, File outputGraphml){
+  void  write(Graph<String, String> currentGraph,Map graphMetadatas, Map vertexMetadatas, Map edgeMetadatas, File outputGraphml){
         Writer fileWriter;
         try {
             fileWriter = new FileWriter(outputGraphml);
@@ -24,9 +25,9 @@ public class GraphWritter {
             return;
         }
         MyGraphMLWriter writer = new MyGraphMLWriter();
-        writer.setGraphData(graphmlLoader.getGraphMetadatas());
-        writer.setVertexData(graphmlLoader.getVertexMetadatas());
-        writer.setEdgeData(graphmlLoader.getEdgeMetadatas());
+      writer.setGraphData(graphMetadatas);
+      writer.setVertexData(vertexMetadatas);
+      writer.setEdgeData(edgeMetadatas);
         writer.setEdgeIDs(new Transformer<String, String>() {
 
             @Override
